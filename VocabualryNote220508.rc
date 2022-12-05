@@ -1,0 +1,146 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WORDCARDBOOKFORM DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "단어장"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_SPELLING,53,16,83,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBOBOX_WORDCLASS,53,32,83,93,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_MEANING,53,47,83,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EXAMPLESENTENCE,53,63,175,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "기재하기",IDC_BUTTON_RECORD,247,8,50,14
+    PUSHBUTTON      "찾        기",IDC_BUTTON_FIND,247,22,50,14
+    PUSHBUTTON      "고  치  기",IDC_BUTTON_CORRECT,247,36,50,14
+    PUSHBUTTON      "지  우  기",IDC_BUTTON_ERASE,247,51,50,14
+    PUSHBUTTON      "정리하기",IDC_BUTTON_ARRANGE,247,66,50,14
+    GROUPBOX        "단어",IDC_WORD,7,7,235,76
+    CTEXT           "철자",IDC_STATIC_SPELLING,16,19,28,8
+    CTEXT           "품사",IDC_STATIC_WORDCLASS,16,34,28,8
+    CTEXT           "뜻",IDC_STATIC_MEANING,16,50,28,8
+    CTEXT           "예문",IDC_STATIC_EXAMPLESENTENCE,16,66,28,8
+    CONTROL         "",IDC_LIST_WORDS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,86,235,83
+END
+
+IDD_FINDINGFORM DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "단어장 - 찾기"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_SPELLING,63,27,88,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MEANING,63,52,88,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "찾        기",IDC_BUTTON_FINDBY,247,38,50,14
+    CONTROL         "",IDC_LIST_WORDS,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,86,235,83
+    GROUPBOX        "조건",IDC_FINDBY,7,7,235,74
+    CONTROL         "철자",IDC_RADIO_SPELLING,"Button",BS_AUTORADIOBUTTON,24,30,31,10
+    CONTROL         " 뜻 ",IDC_RADIO_MEANING,"Button",BS_AUTORADIOBUTTON,24,54,27,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_WORDCARDBOOKFORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_FINDINGFORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_WORDCARDBOOKFORM AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_FINDINGFORM AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
